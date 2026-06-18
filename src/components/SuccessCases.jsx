@@ -77,7 +77,7 @@ const SuccessCases = () => {
               </div>
               <div className="browser-body">
                 <div className="scroll-image-container">
-                  <img src={autolookImg} alt="AutoLook Full Page" className="scroll-image" />
+                  <img src={autolookImg} alt="Caso de éxito de diseño web premium AutoLook" className="scroll-image" />
                 </div>
               </div>
             </div>

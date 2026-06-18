@@ -58,7 +58,7 @@ const Services = () => {
               <div className="service-icon">
                 {service.icon}
               </div>
-              <h3>{service.title}</h3>
+              <h2>{service.title}</h2>
               <p>{service.description}</p>
             </div>
           ))}
@@ -139,7 +139,7 @@ const Services = () => {
           transform: scale(1.1);
         }
 
-        .service-card h3 {
+        .service-card h2 {
           font-size: 1.25rem;
           margin-bottom: 1rem;
         }

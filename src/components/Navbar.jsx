@@ -18,7 +18,7 @@ const Navbar = () => {
     <header className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
       <div className="container nav-container">
         <div className="nav-logo">
-          <img src={logo} alt="Logo" className="nav-logo-img" />
+          <img src={logo} alt="Logotipo oficial de DAARK TECH SOLUTIONS" className="nav-logo-img" />
         </div>
         
         <nav className={`nav-links ${mobileMenuOpen ? 'active' : ''}`}>

@@ -43,7 +43,7 @@ const Hero = () => {
         
         <div className="hero-visual reveal">
           <div className="image-card">
-            <img src={heroMockup} alt="DAARK TECH SOLUTIONS Mockup" className="hero-img" />
+            <img src={heroMockup} alt="Servicios de diseño web premium" className="hero-img" />
             <div className="success-badge">
               <span>+300% Conversión</span>
             </div>

@@ -24,7 +24,7 @@ function App() {
         <div className="container">
           <div className="footer-content">
             <div className="footer-logo">
-              <img src={logo} alt="DAARK TECH SOLUTIONS" className="footer-logo-img" />
+              <img src={logo} alt="Logotipo oficial de DAARK TECH SOLUTIONS" className="footer-logo-img" />
             </div>
             <p>&copy; {new Date().getFullYear()} DAARK TECH SOLUTIONS. Todos los derechos reservados.</p>
           </div>
