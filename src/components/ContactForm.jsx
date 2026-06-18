@@ -35,29 +35,24 @@ const ContactForm = () => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     setStatus('submitting');
     
-    try {
-      const response = await fetch('/api/contact', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(formData),
-      });
-
-      if (response.ok) {
-        setStatus('success');
-        setFormData({
-          name: '', email: '', phone: '', solution: 'nueva', aesthetics: '', description: ''
-        });
-      } else {
-        setStatus('error');
-      }
-    } catch (error) {
-      console.error(error);
-      setStatus('error');
-    }
+    // Configura tu número de WhatsApp aquí (con código de país, ej: 57 para Colombia)
+    const phoneNumber = "573112634729"; 
+    
+    const message = `Hola DAARK TECH SOLUTIONS! 🚀\n\nAcabo de llenar el formulario rápido:\n\n*Nombre/Empresa:* ${formData.name}\n*Email:* ${formData.email}\n*Mi Teléfono:* ${formData.phone}\n*Solución:* ${formData.solution === 'nueva' ? 'Web desde cero' : 'Modernizar web actual'}\n*Idea de Estética:* ${formData.aesthetics || 'No especificada'}\n\n*Idea General:* ${formData.description}`;
+    
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    
+    // Abre WhatsApp en una nueva pestaña
+    window.open(whatsappUrl, '_blank');
+    
+    setStatus('success');
+    setFormData({
+      name: '', email: '', phone: '', solution: 'nueva', aesthetics: '', description: ''
+    });
   };
 
   return (
@@ -75,9 +70,9 @@ const ContactForm = () => {
             {status === 'success' ? (
               <div className="success-message">
                 <CheckCircle size={48} color="var(--color-accent-primary)" />
-                <h4>¡Mensaje Enviado!</h4>
-                <p>Nos pondremos en contacto contigo lo antes posible para agendar el diagnóstico.</p>
-                <button className="btn-primary mt-4" onClick={() => setStatus('idle')}>Enviar otro mensaje</button>
+                <h4>¡Te estamos redirigiendo a WhatsApp!</h4>
+                <p>Tu mensaje ya está listo para ser enviado a nuestro equipo.</p>
+                <button className="btn-primary mt-4" onClick={() => setStatus('idle')}>Volver al formulario</button>
               </div>
             ) : (
               <form onSubmit={handleSubmit}>
