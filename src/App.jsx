@@ -1,63 +1,65 @@
-import React from 'react';
-import { Rocket } from 'lucide-react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Services from './components/Services';
+import PlansSection from './components/PlansSection';
+import WhyUs from './components/WhyUs';
 import SuccessCases from './components/SuccessCases';
 import ContactForm from './components/ContactForm';
-import logo from './assets/logo.png';
-import './index.css';
+import CtaSection from './components/CtaSection';
+import FloatingWhatsApp from './components/FloatingWhatsApp';
+import logoMark from './assets/logo-mockup-icon.png';
 
 function App() {
   return (
-    <div className="app-container">
+    <div className="bg-background min-h-screen">
+      <div className="bg-mesh" />
       <Navbar />
-      
+
       <main>
         <Hero />
         <Services />
+        <PlansSection />
+        <WhyUs />
         <SuccessCases />
         <ContactForm />
+        <CtaSection />
       </main>
 
-      <footer className="footer">
-        <div className="container">
-          <div className="footer-content">
-            <div className="footer-logo">
-              <img src={logo} alt="Logotipo oficial de DAARK TECH SOLUTIONS" className="footer-logo-img" />
+      <footer className="w-full bg-surface-container-low border-t border-white/10">
+        <div className="max-w-container-max mx-auto py-section-gap px-gutter flex flex-col md:flex-row justify-between items-center gap-12">
+          <div className="flex flex-col gap-4 items-center md:items-start text-center md:text-left">
+            <div className="flex items-center gap-3">
+              <img
+                src={logoMark}
+                alt="Logotipo oficial de DAARK TECH SOLUTIONS"
+                className="h-10 w-auto object-contain"
+              />
+              <span className="text-headline-sm font-bold text-primary">DAARK TECH SOLUTIONS</span>
             </div>
-            <p>&copy; {new Date().getFullYear()} DAARK TECH SOLUTIONS. Todos los derechos reservados.</p>
+            <p className="text-body-md text-on-surface-variant max-w-xs">
+              Elevando el estándar del desarrollo web corporativo.
+            </p>
+          </div>
+
+          <div className="flex flex-wrap justify-center gap-8">
+            <a href="#services" className="text-label-caps text-on-surface-variant hover:text-secondary transition-colors">
+              Servicios
+            </a>
+            <a href="#plans" className="text-label-caps text-on-surface-variant hover:text-secondary transition-colors">
+              Planes
+            </a>
+            <a href="#contact" className="text-label-caps text-on-surface-variant hover:text-secondary transition-colors">
+              Contacto
+            </a>
+          </div>
+
+          <div className="text-on-surface-variant text-label-caps opacity-80 text-center">
+            &copy; {new Date().getFullYear()} DAARK TECH SOLUTIONS. Todos los derechos reservados.
           </div>
         </div>
       </footer>
 
-      <style>{`
-        .footer {
-          background-color: var(--color-charcoal);
-          color: var(--color-bg-secondary);
-          padding: 3rem 0;
-          text-align: center;
-        }
-
-        .footer-logo {
-          height: 60px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          margin-bottom: 2rem;
-          overflow: visible;
-        }
-        
-        .footer-logo-img {
-          height: 250px;
-          width: auto;
-          filter: brightness(0) invert(1);
-        }
-
-        .footer p {
-          color: var(--color-text-secondary);
-        }
-      `}</style>
+      <FloatingWhatsApp />
     </div>
   );
 }
