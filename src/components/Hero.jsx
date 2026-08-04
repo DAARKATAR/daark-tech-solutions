@@ -41,7 +41,7 @@ const Hero = () => {
 
         <div className="reveal flex flex-col sm:flex-row items-center justify-center gap-4 w-full">
           <a
-            href="https://wa.me/573112634729"
+            href="https://wa.me/573138623258"
             className="w-full sm:w-auto px-8 py-4 premium-gradient text-white text-headline-sm rounded-xl flex items-center justify-center gap-3 hover:shadow-lg hover:shadow-primary/20 transition-all"
           >
             Contactar por WhatsApp

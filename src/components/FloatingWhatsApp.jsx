@@ -2,7 +2,7 @@ import WhatsAppIcon from './icons/WhatsAppIcon';
 
 const FloatingWhatsApp = () => (
   <a
-    href="https://wa.me/573112634729"
+    href="https://wa.me/573138623258"
     aria-label="WhatsApp"
     className="fixed bottom-8 right-8 w-16 h-16 bg-whatsapp text-white rounded-full flex items-center justify-center shadow-2xl hover:scale-110 active:scale-90 transition-all z-[100] group"
   >

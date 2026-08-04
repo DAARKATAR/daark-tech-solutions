@@ -110,7 +110,7 @@ const PlansSection = () => {
             </p>
           </div>
           <a
-            href="https://wa.me/573112634729"
+            href="https://wa.me/573138623258"
             className="w-full md:w-auto px-10 py-4 border border-primary/50 text-primary hover:bg-primary hover:text-on-primary text-label-caps uppercase tracking-widest rounded-xl transition-all text-center"
           >
             Según Proyecto

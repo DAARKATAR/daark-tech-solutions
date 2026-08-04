@@ -32,7 +32,7 @@ const CtaSection = () => {
           próximo proyecto digital.
         </p>
         <a
-          href="https://wa.me/573112634729"
+          href="https://wa.me/573138623258"
           className="inline-flex items-center gap-3 px-10 py-5 premium-gradient text-white text-headline-sm rounded-2xl relative z-10 hover:scale-105 transition-transform shadow-xl shadow-primary/20"
         >
           Hablar con un Experto

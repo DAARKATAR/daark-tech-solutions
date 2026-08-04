@@ -44,7 +44,7 @@ const Navbar = () => {
         </nav>
 
         <a
-          href="https://wa.me/573112634729"
+          href="https://wa.me/573138623258"
           className="hidden md:inline-block px-6 py-2 premium-gradient text-white text-label-caps uppercase tracking-widest rounded-lg hover:opacity-90 active:scale-95 transition-all"
         >
           Empezar
@@ -72,7 +72,7 @@ const Navbar = () => {
             </a>
           ))}
           <a
-            href="https://wa.me/573112634729"
+            href="https://wa.me/573138623258"
             onClick={() => setMobileMenuOpen(false)}
             className="px-6 py-3 premium-gradient text-white text-center text-label-caps uppercase tracking-widest rounded-lg"
           >

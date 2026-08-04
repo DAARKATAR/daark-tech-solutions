@@ -37,7 +37,7 @@ const ContactForm = () => {
     e.preventDefault();
     setStatus('submitting');
 
-    const phoneNumber = '573112634729';
+    const phoneNumber = '573138623258';
     const message = `Hola DAARK TECH SOLUTIONS! 🚀\n\nAcabo de llenar el formulario rápido:\n\n*Nombre/Empresa:* ${formData.name}\n*Email:* ${formData.email}\n*Mi Teléfono:* ${formData.phone}\n*Solución:* ${formData.solution === 'nueva' ? 'Web desde cero' : 'Modernizar web actual'}\n*Idea de Estética:* ${formData.aesthetics || 'No especificada'}\n\n*Idea General:* ${formData.description}`;
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
